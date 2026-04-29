@@ -87,6 +87,7 @@ SOURCE CODE >>
 95. menampilkan menu
 
 <img width="547" height="448" alt="Screenshot 2026-04-29 215235" src="https://github.com/user-attachments/assets/65d24eb2-690f-43d2-8e37-f39b0e0a1c82" />
+<img width="633" height="560" alt="Screenshot 2026-04-29 215646" src="https://github.com/user-attachments/assets/08e3b4af-fda8-4673-9fdd-95ce0b1d2277" />
 98. melihat makanan
 101. menu selanjutnya
 104. menu sebelumnya
