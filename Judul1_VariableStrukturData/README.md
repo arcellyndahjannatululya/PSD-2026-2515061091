@@ -99,3 +99,5 @@ SOURCE CODE >>
 OUTPUT >>
 <img width="627" height="570" alt="Screenshot 2026-04-29 215627" src="https://github.com/user-attachments/assets/03764d03-2fbf-4fb9-9bdf-e0f4b98d9212" />
 Jadi  pada output user memilih pilihan pertama yaitu menambah menu makanan yang selanjutnya akan disimpan oleh sistem lalu user kembali memilih menambah menu makanan yang akan kembali disimpan oleh sistem. User kembali memilih untuk menampilkan semua menu makanan yang dimana sistem akan menampilkan seluruh menu yang sudah di inputkan oleh user. Yang terakhir user memilih untuk keluar dah program akan otomatis berhenti.
+
+https://youtu.be/JKwRbuw0mfQ?si=OWR4S6AYjFyI_Vl5
