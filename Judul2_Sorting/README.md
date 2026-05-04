@@ -37,3 +37,5 @@ SOURCE CODE >>
 OUTPUT >>
 <img width="682" height="269" alt="Screenshot 2026-05-02 224037" src="https://github.com/user-attachments/assets/04e70066-bd0b-479e-a4f1-fab79878c177" />
 Pada output ini program akan berjalan mengecek satu per satu elemen. Seperti pada elemen pertama adalah 8 dan elemen kedua adalah 6 jadi sistem akan melihat manakah elemen yang lebih kecil dan akan di tempatkan di sebelah kiri. Didapatkan elemen kedua lebih kecil dibandingkan dengan elemen pertama jadi, elemen kedua akan di tempatkan ke sebelah kiri dan elemen pertama di sebelah kanan. Sistem akan terus mengecek dan mengurutkan elemen sampai elem-elemen tersebut berada pada posisi yang benar.
+
+https://youtu.be/sNTkEKsrRKI
