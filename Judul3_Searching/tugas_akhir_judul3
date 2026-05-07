@@ -22,7 +22,6 @@ def binary_search(arr, n, target):
 
     return posisi
 
-
 def main():
     print("SISTEM PENCARIAN NOMOR KURSI KERETA")
 
@@ -60,7 +59,6 @@ def main():
         print(f"\nNomor kursi {cari} ditemukan pada indeks ke-{hasil}")
     else:
         print(f"\nNomor kursi {cari} tidak ditemukan")
-
 
 if __name__ == "__main__":
     main()
