@@ -1,1 +1,66 @@
+def binary_search(arr, n, target):
+    kiri = 0
+    kanan = n - 1
+    posisi = -1
 
+    while kiri <= kanan:
+        tengah = kiri + (kanan - kiri) // 2
+
+        print(f"\nPengecekan kursi tengah: {arr[tengah]}")
+
+        if arr[tengah] == target:
+            posisi = tengah
+            break
+
+        elif arr[tengah] < target:
+            print("Mencari kursi di bagian kanan")
+            kiri = tengah + 1
+
+        else:
+            print("Mencari kursi di bagian kiri")
+            kanan = tengah - 1
+
+    return posisi
+
+
+def main():
+    print("SISTEM PENCARIAN NOMOR KURSI KERETA")
+
+    try:
+        jumlah = int(input("Masukkan jumlah nomor kursi tersedia: "))
+    except ValueError:
+        print("Input harus berupa angka!")
+        return
+
+    kursi = []
+
+    print("\nMasukkan nomor kursi secara urut menaik:")
+    for i in range(jumlah):
+        while True:
+            try:
+                nomor = int(input(f"Kursi ke-{i+1}: "))
+                kursi.append(nomor)
+                break
+            except ValueError:
+                print("Input tidak valid!")
+
+    print("\nDaftar nomor kursi:")
+    print(kursi)
+
+    while True:
+        try:
+            cari = int(input("\nMasukkan nomor kursi yang ingin dicari: "))
+            break
+        except ValueError:
+            print("Input harus berupa angka!")
+
+    hasil = binary_search(kursi, jumlah, cari)
+
+    if hasil != -1:
+        print(f"\nNomor kursi {cari} ditemukan pada indeks ke-{hasil}")
+    else:
+        print(f"\nNomor kursi {cari} tidak ditemukan")
+
+
+if __name__ == "__main__":
+    main()
