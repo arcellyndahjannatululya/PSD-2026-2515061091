@@ -81,3 +81,4 @@ OUTPUT >>
 4. setelah di cek data lebih kecil daripada nilai data tengah jadi pengeceka bergeser ke kiri
 5. data di temukan pada indeks ke-0
     
+https://youtu.be/RhdDrRxY9JM
