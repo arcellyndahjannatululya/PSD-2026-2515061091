@@ -1,1 +1,67 @@
+class QueuePeminjamanBuku:
+    def __init__(self):
+        self.queue = []
 
+    def enqueue(self, nama):
+        self.queue.append(nama)
+        print(f"{nama} masuk ke antrian peminjaman buku")
+
+    def dequeue(self):
+        if self.is_empty():
+            print("Antrian kosong")
+        else:
+            nama = self.queue.pop(0)
+            print(f"{nama} selesai dilayani")
+
+    def peek(self):
+        if self.is_empty():
+            print("Antrian kosong")
+        else:
+            print(f"Antrian terdepan: {self.queue[0]}")
+
+    def display(self):
+        if self.is_empty():
+            print("Antrian kosong")
+        else:
+            print("Daftar antrian peminjaman buku:")
+            for i, nama in enumerate(self.queue, start=1):
+                print(f"{i}. {nama}")
+
+    def is_empty(self):
+        return len(self.queue) == 0
+
+def main():
+    antrian = QueuePeminjamanBuku()
+
+    while True:
+        print("\n=== ANTRIAN PEMINJAMAN BUKU ===")
+        print("1. Tambah Antrian")
+        print("2. Layani Peminjam")
+        print("3. Lihat Antrian Depan")
+        print("4. Tampilkan Semua Antrian")
+        print("5. Keluar")
+
+        pilih = input("Pilih menu: ")
+
+        if pilih == "1":
+            nama = input("Masukkan nama peminjam: ")
+            antrian.enqueue(nama)
+
+        elif pilih == "2":
+            antrian.dequeue()
+
+        elif pilih == "3":
+            antrian.peek()
+
+        elif pilih == "4":
+            antrian.display()
+
+        elif pilih == "5":
+            print("Program selesai")
+            break
+
+        else:
+            print("Pilihan tidak valid")
+
+if __name__ == "__main__":
+    main()
