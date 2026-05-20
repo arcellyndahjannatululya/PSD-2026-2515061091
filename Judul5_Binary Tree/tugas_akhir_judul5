@@ -1,1 +1,122 @@
+class Node:
+    def __init__(self, key):
+        self.key = key
+        self.left = None
+        self.right = None
 
+class BSTAntrianKopi:
+    def __init__(self):
+        self.root = None
+
+    def insert_node(self, root, key):
+        if root is None:
+            return Node(key)
+
+        if key < root.key:
+            root.left = self.insert_node(root.left, key)
+        elif key > root.key:
+            root.right = self.insert_node(root.right, key)
+
+        return root
+
+    def insert(self, key):
+        self.root = self.insert_node(self.root, key)
+
+    def level_order(self, root):
+        if root is None:
+            print("Antrian kopi kosong")
+            return
+
+        queue = []
+        queue.append(root)
+
+        print("Nomor antrian pesanan kopi:")
+
+        while len(queue) > 0:
+            current = queue.pop(0)
+            print(current.key, end=" ")
+
+            if current.left is not None:
+                queue.append(current.left)
+
+            if current.right is not None:
+                queue.append(current.right)
+
+        print()
+
+    def find_min(self):
+        current = self.root
+
+        if current is None:
+            return None
+
+        while current.left is not None:
+            current = current.left
+
+        return current.key
+
+    def find_max(self):
+        current = self.root
+
+        if current is None:
+            return None
+
+        while current.right is not None:
+            current = current.right
+
+        return current.key
+
+def main():
+    bst = BSTAntrianKopi()
+
+    pilih = 0
+
+    while pilih != 5:
+        print("\n=== ANTRIAN PESANAN KOPI ===")
+        print("1. Tambah nomor antrian")
+        print("2. Lihat antrian")
+        print("3. Lihat nomor antrian pertama")
+        print("4. Lihat nomor antrian terakhir")
+        print("5. Keluar")
+
+        try:
+            pilih = int(input("Pilih menu: "))
+        except ValueError:
+            print("Input harus angka!")
+            continue
+
+        if pilih == 1:
+            try:
+                nomor = int(input("Masukkan nomor antrian: "))
+                bst.insert(nomor)
+                print(f"Nomor antrian {nomor} berhasil ditambahkan")
+            except ValueError:
+                print("Input tidak valid!")
+
+        elif pilih == 2:
+            bst.level_order(bst.root)
+
+        elif pilih == 3:
+            hasil = bst.find_min()
+
+            if hasil is not None:
+                print(f"Nomor antrian pertama: {hasil}")
+            else:
+                print("Antrian kosong")
+
+        elif pilih == 4:
+            hasil = bst.find_max()
+
+            if hasil is not None:
+                print(f"Nomor antrian terakhir: {hasil}")
+            else:
+                print("Antrian kosong")
+
+        elif pilih == 5:
+            print("Program selesai")
+
+        else:
+            print("Pilihan tidak valid")
+
+if __name__ == "__main__":
+    main()
