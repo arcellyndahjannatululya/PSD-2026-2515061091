@@ -60,6 +60,6 @@ Program selesai. Program berhenti karena pengguna memilih keluar dari sistem.
 
 Kesimpulannya, program berhasil menggunakan Binary Search Tree untuk menyimpan dan mengelola nomor antrian pesanan kopi. Data otomatis tersusun berdasarkan aturan BST sehingga pencarian nomor antrian pertama dan terakhir menjadi lebih mudah dan cepat.
 
-
+https://youtu.be/dCPPbX5XKgE
 
 
