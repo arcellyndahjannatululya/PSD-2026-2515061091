@@ -92,3 +92,4 @@ OUTPUT >>
 
 Pada output tersebut menunjukkan bahwa program berhasil menyimpan data kopi ke dalam Hash Table, kemudian melakukan proses pencarian dan penghapusan data. Saat pengguna memasukkan key 9, program berhasil menemukan data dengan nilai "Butterscout". Selanjutnya, program menghapus data dengan key 5 (Kopi Kapal Api), sehingga pada tampilan hash table setelah penghapusan, indeks 5 menjadi NONE, yang menandakan bahwa data tersebut sudah tidak ada lagi di dalam Hash Map.
 
+https://youtu.be/8USrHH4ONkU
