@@ -37,4 +37,58 @@ SOURCE KODE >>
 27. digunakan untuk mencari data berdasarkan key
 28. menentukan indeks key
 29. mengambil node pertama pada indeks tersebut
-30. 
+30. menelusuri linked list
+31. jika key ditemukan
+32. mengembalikan node yang ditemukan
+33. berpindah ke node berikutnya
+34. jika data tidak ditemukan maka mengembalikan None
+35. -
+36. fungsi untuk menghapus data berdasarkan key
+37. menentukan indeks key
+38. mengambil node pertama
+39. variabel untuk menyimpan node sebelumnya
+40. menelusuri linked list
+41. jika key ditemukan
+42-43. jika node yang dihapus berada diawal head berpindah ke node berikutnya
+44-45. jika node berada di tengah atau akhir node sebelumnya langsung menunjuk ke node sesudahnya
+46. penghapusan berhasil
+47. menyimpan node sekarang sebagai node sebelumnya
+48. berpindah ke node berikutnya
+49. jika key tidak ditemukan
+50. -
+51. menampilkan isi hash table
+52. mencetak judul
+53. melakukan perulangan dari indeks 0 sampai 9
+54. menampilkan nomor indeks
+55. mengambil node pertama pada indeks tersebut
+56. menelusuri linked list
+57. menampilkan pasangan key dan value
+58. berpindah ke node berikutnya
+59. menandakan akhir linked list
+60. -
+61. program utama
+62. membuat objek hash map
+63. menambahkan data kopi dengan menyimpan key 7 value Torabika
+64. menambahkan data kopi dengan menyimpan key 5 value Kopi Kapal Api
+65. menambahkan data kopi dengan menyimpan key 1 value Capucinno
+66. menambahkan data kopi dengan menyimpan key 3 value Latte
+67. menambahkan data kopi dengan menyimpan key 9 value BUtterscout
+68. menampilkan seluruh isi hash table
+69. -
+70. meminta pengguna memasukkan key kopi yang ingin dicari
+71. jika data ditemukan
+72. menampilkan nama kopi
+73-74. jika key tidak ada
+75. -
+76. menghapus data dengan key 5 (Kopi Kapal Api)
+77. menampilkan pesan
+78. menampilkan isi hash table setelah penghapusan
+79. -
+80. memastikan program dijalankan langsung, bukan diimpor dari file lain
+81. memanggil fungsi main() sehingga seluruh program dieksekusi
+
+OUTPUT >>
+<img width="750" height="763" alt="image" src="https://github.com/user-attachments/assets/a894e9cd-ec06-449d-be64-b5cddc5fbf09" />
+
+Pada output tersebut menunjukkan bahwa program berhasil menyimpan data kopi ke dalam Hash Table, kemudian melakukan proses pencarian dan penghapusan data. Saat pengguna memasukkan key 9, program berhasil menemukan data dengan nilai "Butterscout". Selanjutnya, program menghapus data dengan key 5 (Kopi Kapal Api), sehingga pada tampilan hash table setelah penghapusan, indeks 5 menjadi NONE, yang menandakan bahwa data tersebut sudah tidak ada lagi di dalam Hash Map.
+
